@@ -1,8 +1,157 @@
 {
   "layerTree": [
-    "e220d708-c851-4f54-b9ae-9c56c5e04480"
+    "e220d708-c851-4f54-b9ae-9c56c5e04480",
+    "7024ea25-5905-4075-8a92-f7df41b614e2",
+    "9902bb76-1ece-4195-a37b-bbf5f5e3482d",
+    "274cf825-33bc-416b-8590-a1c0e858ed24",
+    "520e922b-f1f5-4b29-86f0-2cc65dd27cd1"
   ],
   "layers": {
+    "274cf825-33bc-416b-8590-a1c0e858ed24": {
+      "name": "NASAGIBS.ModisTerraTrueColorCR Layer",
+      "parameters": {
+        "source": "89942009-5291-4943-8e3a-d9f8b5a64522"
+      },
+      "type": "RasterLayer",
+      "visible": true
+    },
+    "520e922b-f1f5-4b29-86f0-2cc65dd27cd1": {
+      "name": "US Cities",
+      "parameters": {
+        "color": {
+          "circle-fill-color": [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "get",
+              "ELEV_IN_FT"
+            ],
+            719.2222222222222,
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            1550.4444444444443,
+            [
+              115.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            2381.6666666666665,
+            [
+              230.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            3212.8888888888887,
+            [
+              238.0,
+              70.0,
+              0.0,
+              1.0
+            ],
+            4044.111111111111,
+            [
+              247.0,
+              140.0,
+              0.0,
+              1.0
+            ],
+            4875.333333333333,
+            [
+              255.0,
+              210.0,
+              0.0,
+              1.0
+            ],
+            5706.555555555555,
+            [
+              255.0,
+              225.0,
+              85.0,
+              1.0
+            ],
+            6537.777777777777,
+            [
+              255.0,
+              240.0,
+              170.0,
+              1.0
+            ],
+            7369.0,
+            [
+              255.0,
+              255.0,
+              255.0,
+              1.0
+            ]
+          ]
+        },
+        "opacity": 1.0,
+        "source": "d15fcc82-c2d0-4812-a3b4-e061fa3780b5",
+        "symbologyState": {
+          "colorRamp": "hot",
+          "method": "color",
+          "mode": "equal interval",
+          "nClasses": "9",
+          "renderType": "Graduated",
+          "value": "ELEV_IN_FT"
+        },
+        "type": "circle"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
+    "7024ea25-5905-4075-8a92-f7df41b614e2": {
+      "filters": {
+        "appliedFilters": [
+          {
+            "feature": null,
+            "operator": null,
+            "value": null
+          }
+        ],
+        "logicalOp": null
+      },
+      "name": "SEEC and NSIDC",
+      "parameters": {
+        "color": null,
+        "opacity": 1.0,
+        "source": "092409c5-eb40-4933-b5f0-69cbffaecd55",
+        "symbologyState": null,
+        "type": "line"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
+    "9902bb76-1ece-4195-a37b-bbf5f5e3482d": {
+      "filters": {
+        "appliedFilters": [
+          {
+            "feature": null,
+            "operator": null,
+            "value": null
+          }
+        ],
+        "logicalOp": null
+      },
+      "name": "Module 1",
+      "parameters": {
+        "color": null,
+        "opacity": 1.0,
+        "source": "65fad3b8-3bec-49f7-b346-0f7ed63d4501",
+        "symbologyState": null,
+        "type": "line"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
     "e220d708-c851-4f54-b9ae-9c56c5e04480": {
       "name": "Basemap",
       "parameters": {
@@ -12,23 +161,155 @@
       "visible": true
     }
   },
-  "metadata": {},
+  "metadata": {
+    "annotation_e91a8f41-c9d4-4383-9125-e817f3985138": "{\"position\":{\"x\":-11820888.050050046,\"y\":4568820.581718663},\"zoom\":4.870096733951634,\"label\":\"New annotation\",\"contents\":[{\"value\":\"Random place in Colorado\",\"user\":{\"username\":\"rtmccune\",\"name\":\"rtmccune\",\"display_name\":\"rtmccune\",\"initials\":\"r\",\"avatar_url\":null,\"color\":\"var(--jp-collaborator-color3)\"}}],\"parent\":\"\",\"open\":false}"
+  },
   "options": {
     "bearing": 0.0,
     "extent": [
-      -16943218.227214247,
-      1813884.940591243,
-      -5539788.477108987,
-      8661878.212775469
+      -14634962.245339898,
+      2241660.1168868844,
+      -6810646.723642377,
+      6782675.724234177
     ],
-    "latitude": 42.51130981651042,
-    "longitude": -100.98414277727615,
+    "latitude": 37.52235010280137,
+    "longitude": -96.32459157043735,
     "pitch": 0.0,
     "projection": "EPSG:3857",
-    "zoom": 4.3991367692285905
+    "zoom": 4.563680986844199
   },
   "schemaVersion": "0.5.0",
   "sources": {
+    "092409c5-eb40-4933-b5f0-69cbffaecd55": {
+      "name": "SEEC and NSIDC Source",
+      "parameters": {
+        "data": {
+          "bbox": null,
+          "features": [
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.24206599999948,
+                  40.01007767367196
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "4001 Discovery Dr., Boulder, CO",
+                "Name": "Sustainability, Energy, and Environment Community (SEEC) Building"
+              },
+              "type": "Feature"
+            },
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.25271574468819,
+                  40.01262175838934
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "National Snow and Ice Data Center CIRES, 449 UCB University of Colorado Boulder",
+                "Name": "National Snow and Ice Data Center (NSIDC)"
+              },
+              "type": "Feature"
+            }
+          ],
+          "type": "FeatureCollection"
+        },
+        "path": null,
+        "valid": null
+      },
+      "type": "GeoJSONSource"
+    },
+    "65fad3b8-3bec-49f7-b346-0f7ed63d4501": {
+      "name": "Module 1 Source",
+      "parameters": {
+        "data": {
+          "bbox": null,
+          "features": [
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.24206599999948,
+                  40.01007767367196
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "4001 Discovery Dr., Boulder, CO",
+                "Name": "Sustainability, Energy, and Environment Community (SEEC) Building"
+              },
+              "type": "Feature"
+            },
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.25271574468819,
+                  40.01262175838934
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "National Snow and Ice Data Center CIRES, 449 UCB University of Colorado Boulder",
+                "Name": "National Snow and Ice Data Center (NSIDC)"
+              },
+              "type": "Feature"
+            },
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -122.25754047719431,
+                  37.87381567413291
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "Evans Hall, University Drive, Berkeley, CA 94720",
+                "Name": "Evans Hall, UC Berkeley"
+              },
+              "type": "Feature"
+            }
+          ],
+          "type": "FeatureCollection"
+        },
+        "path": null,
+        "valid": null
+      },
+      "type": "GeoJSONSource"
+    },
+    "89942009-5291-4943-8e3a-d9f8b5a64522": {
+      "name": "NASAGIBS.ModisTerraTrueColorCR",
+      "parameters": {
+        "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
+        "maxZoom": 9.0,
+        "minZoom": 1.0,
+        "provider": "NASAGIBS",
+        "url": "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/{variant}/default/{time}/{tilematrixset}{max_zoom}/{z}/{y}/{x}.{format}",
+        "urlParameters": {
+          "format": "jpg",
+          "tilematrixset": "GoogleMapsCompatible_Level",
+          "time": "2025-02-26",
+          "variant": "MODIS_Terra_CorrectedReflectance_TrueColor"
+        }
+      },
+      "type": "RasterSource"
+    },
     "8c8bb2c9-59a5-4962-9835-bd4eada4a4ce": {
       "name": "Esri.WorldGrayCanvas",
       "parameters": {
@@ -42,6 +323,13 @@
         }
       },
       "type": "RasterSource"
+    },
+    "d15fcc82-c2d0-4812-a3b4-e061fa3780b5": {
+      "name": "Custom GeoJSON Layer Source",
+      "parameters": {
+        "path": "us_cities.geojson"
+      },
+      "type": "GeoJSONSource"
     }
   }
 }
